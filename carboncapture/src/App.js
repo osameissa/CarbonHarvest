@@ -1,5 +1,7 @@
+import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import Menu from "./Menu.js";
 
 function App() {
   return (
@@ -9,6 +11,7 @@ function App() {
       </header>
       <body>
         <h1>Check 2 1 2</h1>
+        <Menu /> {/* Corrected placement of Menu component */}
       </body>
     </div>
   );
