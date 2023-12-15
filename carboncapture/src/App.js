@@ -1,17 +1,17 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import Menu from "./Menu.js";
+import Navbar from "./Navbar.js";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
-      <body>
-        <h1>Check 2 1 2</h1>
-        <Menu /> {/* Corrected placement of Menu component */}
+    <div>
+      <header></header>
+      <body className = "home">
+        <Navbar />
+        <h1>Carbon Harvest 🌳</h1>
+        <h2>Empowering Farmers 🚜</h2>
+        <h2>Enriching Earth 🌍</h2>
       </body>
     </div>
   );

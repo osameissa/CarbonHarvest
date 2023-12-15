@@ -1,38 +1,85 @@
-.App {
+/* App.css */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
   text-align: center;
+  background-color: thistle;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body .home {
+  background-image: url("/images/bg.jpeg");
+  background-size: cover;
+  background-position: center;
   min-height: 100vh;
+}
+
+.navbar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px;
+  background-color: lightgray;
+  border-bottom: 1px solid black;
 }
 
-.App-link {
-  color: #61dafb;
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav li {
+  margin-left: 20px;
+  margin-right: 50px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+a:hover {
+  color: darkslategray;
+  text-decoration: underline;
+}
+
+.connect-button {
+  margin-right: 20px;
+}
+
+.connect-button button {
+  background-color: #4caf50;
+  color: black;
+  border: none;
+  padding: 8px 16px; /* Adjust padding for a smaller button */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px; /* Adjust font-size for a smaller button */
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.connect-button button:hover {
+  background-color: #45a049;
+}
+
+/* Additional styling for the rest of your content */
+.App {
+}
+
+h1 {
+  margin-top: 25%;
+  margin-bottom: 5%;
+  font-size: 4rem;
+}
+
+h2 {
+  text-decoration: underline;
+  text-decoration-color: #45a049;
+  opacity: 77%;
 }
