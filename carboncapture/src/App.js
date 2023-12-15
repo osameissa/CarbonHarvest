@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import Navbar from "./components/Navbar.js";
 
@@ -16,7 +15,9 @@ function App() {
         </div>
       </body>
     </div>
+    
   );
+  
 }
 
 export default App;
