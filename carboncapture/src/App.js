@@ -11,8 +11,8 @@ function App() {
         <Navbar />
         <div className="homeContainer">
           <h1>Carbon Harvest 🌳</h1>
-          <h2>Empowering Farmers 🚜</h2>
-          <h2>Enriching Earth 🌍</h2>
+          <h2>Empowering Farmers &nbsp;&nbsp;🚜</h2>
+          <h2>Enriching Earth &nbsp;&nbsp;🌍</h2>
         </div>
       </body>
     </div>

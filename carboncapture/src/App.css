@@ -73,7 +73,8 @@ nav a:hover {
 }
 
 .connect-button button:hover {
-  background-color: #45a049;
+  background-color: #38803c;
+  color: white;
 }
 
 h1 {
