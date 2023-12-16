@@ -1,14 +1,13 @@
-import React from 'react';
-import Navbar from './Navbar';
+// About.js
+import React from "react";
 
-const About = () => {
+function About() {
   return (
     <div>
-    <Navbar/>
-      <h1>About Us</h1>
-      <p>Welcome to our about page! This is where you can learn more about our awesome project.</p>
+      <h1>About Page</h1>
+      {/* Add your about page content here */}
     </div>
   );
-};
+}
 
 export default About;
