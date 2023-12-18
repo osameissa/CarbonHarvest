@@ -12,7 +12,6 @@ function App() {
         <header></header>
         <main>
           <Routes>
-            {/* Set the path to an empty string for the root/home page */}
             <Route path="" element={<Home />} />
             <Route path="/About" element={<About />} />
             <Route path="/Contact" element={<Contact />} />
