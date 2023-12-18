@@ -5,7 +5,7 @@ function Home() {
   return (
     <div className="home">
       <Navbar />
-      <div className="homeContainer">
+      <div className="container">
         <h1>Carbon Harvest 🌳</h1>
         <h2>Empowering Farmers &nbsp;&nbsp;🚜</h2>
         <h2>Enriching Earth &nbsp;&nbsp;🌍</h2>
