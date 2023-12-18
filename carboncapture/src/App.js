@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact.js";
 
 function App() {
+  document.title = "Carbon Harvest";
   return (
     <Router>
       <div>
