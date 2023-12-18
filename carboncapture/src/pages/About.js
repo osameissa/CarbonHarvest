@@ -7,11 +7,12 @@ function About() {
     <body class="aboutPage">
       <div>
         <Navbar />
-        <div class="aboutContainer">
+        <div class="container">
           <h1>About Us 🔍 </h1>
+          <br></br>
           <h2>
-            Welcome to our About page!<br></br> We are a passionate team
-            dedicated to empowering farmers and enriching the enviroment.
+            We are a passionate team dedicated to empowering farmers and
+            enriching the enviroment.
           </h2>
         </div>
       </div>
