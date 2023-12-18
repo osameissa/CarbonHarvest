@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+# Tokenized Carbon-Dioxide Token
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Idea
 
-## Available Scripts
+Tokenized Carbon-Dioxide Token is a project that aims to showcase a sustainable and eco-friendly business model. The project enables farms to mine tokens by growing trees, sequestering carbon dioxide, and tokenizing the carbon offset. By leveraging blockchain technology, it creates a more liquid and frictionless market for carbon offset.
 
-In the project directory, you can run:
+## Purpose
 
-### `npm start`
+The purpose of this project is to develop a real-world application of blockchain in agriculture. It serves as a demonstration of a sustainable and transparent solution for companies seeking innovative ways to offset their carbon emissions. The goal is to attract eco-conscious companies and farmers interested in contributing to environmentally friendly practices.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Target Audience
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **Eco-conscious Companies:**
 
-### `npm test`
+   - Seeking sustainable and innovative carbon offset solutions.
+   - Committed to environmentally friendly practices and regulatory compliance.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Farmers:**
+   - Exploring new revenue streams through sustainable and eco-friendly initiatives.
 
-### `npm run build`
+## Goal
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The goal of this project is to create a minimal viable product that illustrates how farms, through tree planting and carbon offset, can mine and generate tokenized carbon-dioxide tokens. The project aims to showcase the efficiency and transparency of using blockchain technology in agriculture.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Blockchain
 
-### `npm run eject`
+- Ethereum for token creation and management.
+- Smart contracts written in Solidity for transparent and automated processes.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Front-end
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- React.js for a user-friendly interface.
+- Material-UI for aesthetically pleasing design.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Back-end
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Node.js and Express.js for server-side logic.
+- MongoDB for storing basic user and tree planting data.
 
-## Learn More
+## User Authentication
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Implement a basic authentication system for secure user interactions.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Data Integration and Sensors
 
-### Code Splitting
+Real-time data integration from ground-based sensors and satellite imagery. Utilize oracles to enhance the accuracy and reliability of environmental data.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Technical Flow
 
-### Analyzing the Bundle Size
+1. **User Registration and Dashboard for Miners:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   - Users register, providing details about their farm.
+   - A comprehensive farm dashboard displays real-time and historical data on tree planting, carbon sequestration, and token mining.
 
-### Making a Progressive Web App
+2. **Token Mining Mechanism:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   - Develop a robust algorithm that calculates token rewards based on factors like the number and type of trees, growth rate, and environmental conditions.
+   - Tokens are mined and issued to the farm's wallet as a reward for carbon offset.
 
-### Advanced Configuration
+3. **Data Integration and Sensors:**
+   - Real-time data from ground-based sensors and satellite imagery are integrated to provide accurate and up-to-date information.
+   - Blockchain ensures transparency and immutability of environmental data.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Eventual Legal Restrictions / Regulatory Implications
 
-### Deployment
+1. **Carbon Credit Compliance:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+   - Collaborate with environmental authorities or agencies to ensure compliance with carbon credit standards.
+   - Clearly communicate the simulated nature of the project.
 
-### `npm run build` fails to minify
+2. **Smart Contract Legality:**
+   - Ensure that smart contracts comply with relevant legal standards for token issuance and trading.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## References
+
+1. [Blockchain Revolution: How the Technology Behind Bitcoin is Changing Money, Business, and the World](https://www.amazon.com/Blockchain-Revolution-Technology-Changing-Business/dp/1101980133) by Don Tapscott and Alex Tapscott.
+
+2. [Ethereum Documentation](https://ethereum.org/)
+
+3. [React.js Documentation](https://reactjs.org/)
+
+4. [Solidity Documentation](https://docs.soliditylang.org/)
+
+5. [MongoDB Documentation](https://docs.mongodb.com/)
