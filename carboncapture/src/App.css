@@ -61,11 +61,11 @@ nav a:hover {
   color: white;
   font-weight: bold;
   border: none;
-  padding: 8px 16px; /* Adjust padding for a smaller button */
+  padding: 8px 16px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 14px; /* Adjust font-size for a smaller button */
+  font-size: 1.1rem;
   cursor: pointer;
   border: 2px solid #5353e0;
   border-radius: 10px;
