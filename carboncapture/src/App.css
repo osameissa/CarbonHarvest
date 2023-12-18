@@ -39,7 +39,7 @@ nav a {
   text-decoration: none;
   color: black;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1.1rem;
   display: inline-block; /* Add this line to make the entire li clickable */
   padding: 12px 20px; /* Add padding to the anchor tag for better clickability */
 }
@@ -76,10 +76,9 @@ nav a:hover {
 }
 
 h1 {
-  margin-bottom: 7%;
   font-size: 4rem;
   color: white;
-  margin-bottom: 88px;
+  margin-bottom: 10vh;
 }
 
 h2 {
@@ -100,7 +99,7 @@ h3 {
   background-color: rgba(62, 55, 55, 0.77);
   padding: 100px;
   border-radius: 77px;
-  max-width: 500px;
+  max-width: 580px;
   height: 40vh;
   margin: auto;
   margin-top: 10vh;
@@ -122,4 +121,17 @@ h3 {
   background-size: cover;
   background-position: center;
   min-height: 100vh;
+}
+
+.cc {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: #f0f0f0;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 12px;
+  color: black;
+  opacity: 0.77;
+  font-weight: bold;
 }
