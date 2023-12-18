@@ -1,6 +1,7 @@
 // About.js
 import React from "react";
 import Navbar from "../components/Navbar.js";
+import Cc from "../components/Cc.js";
 
 function About() {
   return (
@@ -16,6 +17,7 @@ function About() {
           </h2>
         </div>
       </div>
+      <Cc />
     </body>
   );
 }
