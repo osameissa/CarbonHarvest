@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/Home.js";
 import About from "./pages/About";
@@ -9,13 +9,13 @@ function App() {
   return (
     <Router>
       <div>
-        <Home />
         <header></header>
         <main>
           <Routes>
-            <Route path="/home" exact component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/contact" component={Contact} />
+            {/* Set the path to an empty string for the root/home page */}
+            <Route path="" element={<Home />} />
+            <Route path="/About" element={<About />} />
+            <Route path="/Contact" element={<Contact />} />
           </Routes>
         </main>
       </div>
