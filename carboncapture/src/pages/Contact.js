@@ -1,6 +1,7 @@
 // Contact.js
 import React from "react";
 import Navbar from "../components/Navbar.js";
+import Cc from "../components/Cc.js";
 
 function Contact() {
   return (
@@ -9,11 +10,18 @@ function Contact() {
       <div class="container">
         <h1>Contact Us 📞 </h1>
         <div>
-          <h3>Email: contact@example.com</h3>
-          <h3>Phone: (123) 456-7890</h3>
-          <h3>Address: 123 Street, 123 45</h3>
+          <h3>
+            <strong>Email:</strong> contact@example.com
+          </h3>
+          <h3>
+            <strong>Address:</strong> (123) 456-7890
+          </h3>
+          <h3>
+            <strong>Phone:</strong> 123 Street, 123 45
+          </h3>
         </div>
       </div>
+      <Cc />
     </div>
   );
 }
