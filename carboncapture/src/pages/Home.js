@@ -7,11 +7,11 @@ function Home() {
     <div className="home">
       <Navbar />
       <div className="container">
-        <h1>Carbon Harvest 🌳</h1>
+        <h1>CarbonHarvest</h1>
         <h2>Empowering Farmers &nbsp;&nbsp;🚜</h2>
         <h2>Enriching Earth &nbsp;&nbsp;🌍</h2>
       </div>
-      <Cc/>
+      <Cc />
     </div>
   );
 }
