@@ -4,7 +4,7 @@ const Cc = () => {
   return (
     <div className="cc">
       Made by:&#160;{" "}
-      <a href="https://github.com/osameissa" title="Github">
+      <a href="https://github.com/osameissa" title="GitHub">
         Osame Issa
       </a>
     </div>
