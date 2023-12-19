@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Web3 from "web3";
 
 function Navbar() {
   return (
