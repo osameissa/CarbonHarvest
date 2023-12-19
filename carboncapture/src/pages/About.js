@@ -11,8 +11,8 @@ function About() {
         <div class="container">
           <h1>About Us 🔍 </h1>
           <h2>
-            We are a passionate team dedicated to empowering farmers and
-            enriching the enviroment.
+            We are a passionate team at CarbonHarvest dedicated to empowering
+            farmers and enriching the enviroment.
           </h2>
         </div>
       </div>
