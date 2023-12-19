@@ -1,7 +1,8 @@
-/* App.css */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
 body {
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: "Roboto", sans-serif;
   text-align: center;
   background-color: thistle;
   height: 100vh;
@@ -127,11 +128,14 @@ h3 {
   position: fixed;
   bottom: 10px;
   right: 10px;
-  background-color: #f0f0f0;
+  background-color: darkgrey;
   padding: 12px;
   border-radius: 5px;
-  font-size: 12px;
+  font-size: 0.88rem;
   color: black;
-  opacity: 0.77;
   font-weight: bold;
+}
+
+.cc:hover {
+  background-color: #f0f0f0;
 }
