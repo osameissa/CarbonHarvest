@@ -11,13 +11,13 @@ function Contact() {
         <h1>Contact Us 📞 </h1>
         <div>
           <h3>
-            <strong>Email:</strong> contact@example.com
+            <strong>Phone:</strong> (123) 456-7890
           </h3>
           <h3>
-            <strong>Address:</strong> (123) 456-7890
+            <strong>Email:</strong> contact@carbon.capture
           </h3>
           <h3>
-            <strong>Phone:</strong> 123 Street, 123 45
+            <strong>Address:</strong> 123 Street, City, Country
           </h3>
         </div>
       </div>
