@@ -37,10 +37,10 @@ function LoggedIn() {
           <div className="container-grid">
             <div className="container-grid1">
               Assets (ERC-721):
-              <div className="container-grid3"></div>
+              <div className="container-grid3">NFT-grid</div>
             </div>
             <div className="container-grid2">
-              Yield (ERC-20): <div className="container-grid4"></div>
+              Yield (ERC-20): <div className="container-grid4">Yield-graph & assets</div>
             </div>
           </div>
         </div>
