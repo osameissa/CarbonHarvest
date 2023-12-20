@@ -12,13 +12,8 @@ function LoggedIn() {
       if (window.ethereum) {
         const web3 = new Web3(window.ethereum);
         try {
-          // Request account access if needed
           await window.ethereum.request({ method: "eth_requestAccounts" });
-
-          // Get the selected address from MetaMask
           const accounts = await web3.eth.getAccounts();
-
-          // Update the wallet address in the state
           setWalletAddress(accounts[0]);
         } catch (error) {
           console.error("Error connecting to MetaMask:", error.message);
@@ -29,18 +24,25 @@ function LoggedIn() {
     };
 
     loadWeb3();
-  }, []); // Empty dependency array ensures that the effect runs only once on component mount
+  }, []);
 
   return (
     <div className="loggedInPage">
       <LoggedInBar />
       <div className="loggedInContainer">
         <br />
+
         <div className="container2">
           <h4>Welcome, {walletAddress}!</h4>
-          <div className="container-grid">Assets (ERC-721):</div>
-          <br />
-          <div className="container-grid">Yield (ERC-20):</div>
+          <div className="container-grid">
+            <div className="container-grid1">
+              Assets (ERC-721):
+              <div className="container-grid3"></div>
+            </div>
+            <div className="container-grid2">
+              Yield (ERC-20): <div className="container-grid4"></div>
+            </div>
+          </div>
         </div>
       </div>
       <Cc />
