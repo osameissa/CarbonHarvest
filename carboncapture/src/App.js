@@ -7,7 +7,7 @@ import Contact from "./pages/Contact.js";
 import LoggedIn from "./pages/LoggedIn"; // Import the LoggedIn component
 
 function App() {
-  document.title = "CarbonHarvest";
+  document.title = "CarbonHarvest.io";
   return (
     <Router>
       <div>
@@ -17,7 +17,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/loggedIn" element={<LoggedIn />} /> {/* Add this line */}
+            <Route path="/loggedIn" element={<LoggedIn />} />{" "}
+            {/* Add this line */}
           </Routes>
         </main>
       </div>
