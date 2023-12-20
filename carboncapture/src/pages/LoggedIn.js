@@ -33,12 +33,14 @@ function LoggedIn() {
 
   return (
     <div className="loggedInPage">
-      <LoggedInBar/>
+      <LoggedInBar />
       <div className="loggedInContainer">
         <br />
         <div className="container2">
-          <h1>Welcome</h1>
-          <h4>{walletAddress}</h4>
+          <h4>Welcome, {walletAddress}!</h4>
+          <div className="container-grid">Assets (ERC-721):</div>
+          <br />
+          <div className="container-grid">Yield (ERC-20):</div>
         </div>
       </div>
       <Cc />
