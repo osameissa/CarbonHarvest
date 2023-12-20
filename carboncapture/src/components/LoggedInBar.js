@@ -32,7 +32,7 @@ const LoggedInBar = () => {
         {/* Add any navigation items if needed */}
       </nav>
       <div className="connect-button">
-        <button className="signOutBtn" onClick={handleSignOut}>
+        <button className="signOutBtn" onClick={handleSignOut} title="Sign Out">
           <FontAwesomeIcon icon={faRightFromBracket} />
         </button>
       </div>
