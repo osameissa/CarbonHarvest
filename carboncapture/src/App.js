@@ -7,7 +7,7 @@ import Contact from "./pages/Contact.js";
 import LoggedIn from "./pages/LoggedIn"; // Import the LoggedIn component
 
 function App() {
-  document.title = "Carbon Harvest";
+  document.title = "CarbonHarvest";
   return (
     <Router>
       <div>
