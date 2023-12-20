@@ -10,7 +10,7 @@ const LoggedInBar = ({ handleLogout, handleAnotherAction }) => {
         {/* Add any navigation items if needed */}
       </nav>
       <div className="connect-button">
-        <button>
+        <button className="walletBtn">
           <FontAwesomeIcon icon={faWallet} />
         </button>
       </div>
