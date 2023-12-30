@@ -84,3 +84,5 @@ Real-time data integration from ground-based sensors and satellite imagery. Util
 4. [Solidity Documentation](https://docs.soliditylang.org/)
 
 5. [MongoDB Documentation](https://docs.mongodb.com/)
+
+GG!
