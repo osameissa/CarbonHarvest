@@ -14,10 +14,6 @@ async function main() {
   const nft = await NFT.deploy("MyNFT", "NFT", erc20Token.address);
   await nft.deployed();
   console.log("NFT deployed to:", nft.address);
-
-  // Mint example tokens (optional)
-  await nft.mint(deployer.address);
-  console.log("Token minted to:", deployer.address);
 }
 
 main()
@@ -26,4 +22,3 @@ main()
     console.error(error);
     process.exit(1);
   });
-  

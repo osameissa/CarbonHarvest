@@ -7,7 +7,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 contract NFT is ERC721, Ownable {
     uint256 public nextTokenId;
 
-    constructor(address initialOwner) ERC721("NFT", "NFT") Ownable(initialOwner) {
+    constructor(address initialOwner) ERC721("Tokenized Tree", "TT") Ownable(initialOwner) {
         nextTokenId = 1;
     }
 
