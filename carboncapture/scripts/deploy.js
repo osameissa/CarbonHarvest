@@ -23,4 +23,4 @@ main()
     process.exit(1);
   });
 
-  // memento moralis
+  // memento mori
