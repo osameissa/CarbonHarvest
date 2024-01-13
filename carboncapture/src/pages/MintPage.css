@@ -1,0 +1,66 @@
+/* MintPage.css */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+body.mintPage {
+  background-image: url("/public/images/bg3.jpeg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h5 {
+  color: white;
+  font-size: 3rem;
+  margin: 0;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-decoration: underline;
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+.container {
+  background-color: rgba(62, 55, 55, 0.77);
+  padding: 100px;
+  border-radius: 77px;
+  max-width: 580px;
+  min-width: 50%;
+  height: 40vh;
+  margin: auto;
+  margin-top: 10vh;
+  border: 1px solid darkgray;
+  color: white;
+}
+
+.mintText {
+  margin-top: 50px;
+}
+
+button {
+  background-color: #5353e0;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 4px 8px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.8rem;
+  cursor: pointer;
+  border: 3px solid #5353e0;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+button:hover {
+  border: 3px solid white;
+}
