@@ -1,4 +1,4 @@
-import React from "react"; // Make sure to import React at the beginning
+import React from "react"; 
 import Navbar from "../components/Navbar.js";
 import Cc from "../components/Cc.js";
 
