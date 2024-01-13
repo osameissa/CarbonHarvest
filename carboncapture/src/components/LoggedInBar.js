@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRightFromBracket } from "@fortawesome/free-solid-svg-icons";
 import Web3 from "web3";
 import { useNavigate } from "react-router-dom";
+import MintButton from "../components/MintButton";
+
 
 const LoggedInBar = () => {
   const navigate = useNavigate();
@@ -29,7 +31,7 @@ const LoggedInBar = () => {
   return (
     <div className="navbar">
       <nav>
-        {/* Add any navigation items if needed */}
+      <MintButton />
       </nav>
       <div className="connect-button">
         <button className="signOutBtn" onClick={handleSignOut} title="Sign Out">
