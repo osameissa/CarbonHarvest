@@ -72,7 +72,45 @@ nav a:hover {
   border-radius: 10px;
 }
 
-.connect-button button:hover {
+.mint-btn {
+  background-color: #5353e0;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border: 3px solid #5353e0;
+  border-radius: 10px;
+}
+
+/* BackButton.css */
+.back-button-container {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+}
+
+.back-btn {
+  background-color: #5353e0;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border: 3px solid #5353e0;
+  border-radius: 10px;
+  display: flex;
+}
+
+button:hover {
   border: 3px solid white;
 }
 
@@ -102,6 +140,11 @@ h4 {
   font-size: 1.5rem;
   margin-top: -25px;
   margin-bottom: 50px;
+}
+
+h5 {
+  padding-top: 0px;
+  font-size: 5rem;
 }
 
 .container {
@@ -173,6 +216,13 @@ h4 {
   min-height: 100vh;
 }
 
+.mintPage {
+  background-image: url("/public/images/bg3.jpeg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
 .container-grid {
   display: flex;
   justify-content: space-between;
@@ -204,4 +254,3 @@ h4 {
   background-color: rgba(62, 55, 55, 0.77);
   opacity: 0.69;
 }
-
