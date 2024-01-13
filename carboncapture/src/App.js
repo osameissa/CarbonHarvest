@@ -4,7 +4,8 @@ import "./App.css";
 import Home from "./pages/Home.js";
 import About from "./pages/About";
 import Contact from "./pages/Contact.js";
-import LoggedIn from "./pages/LoggedIn"; // Import the LoggedIn component
+import LoggedIn from "./pages/LoggedIn";
+import MintPage from "./pages/MintPage";
 
 function App() {
   document.title = "CarbonHarvest.io";
@@ -18,7 +19,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/loggedIn" element={<LoggedIn />} />{" "}
-            {/* Add this line */}
+            <Route path="/MintPage" element={<MintPage />} />
           </Routes>
         </main>
       </div>
