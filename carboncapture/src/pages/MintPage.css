@@ -27,7 +27,6 @@ h5 {
   transform: translateX(-50%);
   text-decoration: underline;
   padding-top: 50px;
-  margin-bottom: 50px;
 }
 .container {
   background-color: rgba(62, 55, 55, 0.77);
@@ -63,4 +62,14 @@ button {
 
 button:hover {
   border: 3px solid white;
+}
+
+.mint-btn2 {
+  font-size: 3rem;
+  position: absolute;
+  top: 33%;
+  left: 49%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 100px;
 }
