@@ -266,11 +266,12 @@ h5 {
 
 .container-grid3::-webkit-scrollbar-track {
   background: #212121; /* Background color of the track */
+  border-radius: 5px;
 }
-
 .container-grid3::-webkit-scrollbar-thumb {
-  background-color: #555558; /* Color of the thumb */
-  border-radius: 5px; /* Rounded corners for the thumb */
+  height: 50px;
+  background-color: #555558;
+  border-radius: 5px;
 }
 
 .nft-content {
@@ -311,6 +312,7 @@ h5 {
 
 .nft-item.selected .tree {
   border: 3px solid #5353e0; /* Change border color for selected item */
+  opacity: 1;
 }
 
 .claim-btn {
