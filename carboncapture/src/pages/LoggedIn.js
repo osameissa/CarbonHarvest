@@ -3,6 +3,15 @@ import Web3 from "web3";
 import { Network, Alchemy } from "alchemy-sdk";
 import LoggedInBar from "../components/LoggedInBar";
 import Cc from "../components/Cc";
+import MyERC721Contract from "../abi/MyERC721.json";
+
+const ERC721_ADDRESS = "0xc3e8927CCC64b1BE97c2f35A1d7845f6D01decfA";
+const web3 = new Web3(window.ethereum); // Initialize web3
+
+const myERC721Contract = new web3.eth.Contract(
+  MyERC721Contract.abi,
+  ERC721_ADDRESS
+);
 
 // Setup Alchemy with your API key and network
 const settings = {
@@ -15,21 +24,18 @@ const alchemy = new Alchemy(settings);
 function LoggedIn() {
   const [walletAddress, setWalletAddress] = useState(null);
   const [nfts, setNfts] = useState([]);
+  const [selectedNft, setSelectedNft] = useState(null); // Track selected NFT
+  const [selectedTokenId, setSelectedTokenId] = useState(null); // Store tokenId of the selected NFT
 
   useEffect(() => {
     const loadWeb3 = async () => {
-      if (window.ethereum) {
-        const web3 = new Web3(window.ethereum);
-        try {
-          await window.ethereum.request({ method: "eth_requestAccounts" });
-          const accounts = await web3.eth.getAccounts();
-          setWalletAddress(accounts[0]);
-          loadNFTs(accounts[0]);
-        } catch (error) {
-          console.error("Error connecting to MetaMask:", error.message);
-        }
-      } else {
-        console.error("MetaMask not installed");
+      try {
+        await window.ethereum.request({ method: "eth_requestAccounts" });
+        const accounts = await web3.eth.getAccounts();
+        setWalletAddress(accounts[0]);
+        loadNFTs(accounts[0]);
+      } catch (error) {
+        console.error("Error connecting to MetaMask:", error.message);
       }
     };
 
@@ -45,23 +51,58 @@ function LoggedIn() {
     loadWeb3();
   }, []);
 
+  const handleNftSelection = (nft, tokenId) => {
+    if (selectedNft === nft) {
+      // Deselect if already selected
+      setSelectedNft(null);
+      setSelectedTokenId(null);
+    } else {
+      // Select the NFT and store its tokenId
+      setSelectedNft(nft);
+      setSelectedTokenId(tokenId);
+      console.log("Selected Token ID:", tokenId); // Log the tokenId
+    }
+  };
+
+  const handleClaimTokens = async () => {
+    if (selectedTokenId) {
+      // Ensure a token is selected
+      try {
+        // Call the claimTokens function in your ERC721 contract with the selected tokenId
+        await myERC721Contract.methods.claimTokens(selectedTokenId).send({
+          from: walletAddress,
+        });
+        console.log("Tokens claimed successfully!");
+      } catch (error) {
+        console.error("Error claiming tokens:", error);
+      }
+    } else {
+      console.error("No NFT selected to claim tokens for.");
+    }
+  };
+
   // Define a default photo URL
   const defaultPhotoUrl =
     "https://static.vecteezy.com/system/resources/previews/024/786/062/original/illustration-of-trees-isolated-on-background-with-ai-generated-free-png.png"; // Replace with your default photo URL
-  console.log(nfts);
+
   return (
     <div className="loggedInPage">
       <LoggedInBar />
       <br />
       <div className="loggedInContainer">
         <h4>Welcome, {walletAddress}!</h4>
-
         <div className="container-grid3">
-<div className="assets">Assets (ERC-721):</div>
+          <div className="assets">Assets (ERC-721):</div>
           <div className="nft-grid">
             {nfts.length > 0 ? (
               nfts.map((nft, index) => (
-                <div key={index} className="nft-item">
+                <div
+                  key={index}
+                  className={`nft-item ${
+                    selectedNft === nft ? "selected" : "" // Apply selected style
+                  }`}
+                  onClick={() => handleNftSelection(nft, nft.tokenId)}
+                >
                   <img
                     className="tree"
                     src={
@@ -80,6 +121,11 @@ function LoggedIn() {
               <p className="no">No NFTs found</p>
             )}
           </div>
+          {selectedTokenId && (
+            <button className="claim-btn" onClick={handleClaimTokens}>
+              Claim Tokens
+            </button>
+          )}
         </div>
         <Cc />
       </div>
