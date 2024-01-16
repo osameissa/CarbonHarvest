@@ -26,7 +26,7 @@ const MintPage = () => {
         console.log(addresses); // Log the addresses to the console
 
         const deployedNetwork = {
-          address: "0x9fdAFe4911377141b5398af2BC2F94FFc4ca1753", // Replace with your contract's address
+          address: "0xc3e8927CCC64b1BE97c2f35A1d7845f6D01decfA", // Replace with your contract's address
         };
 
         // Initializing the contract without checking the network
