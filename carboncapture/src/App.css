@@ -255,10 +255,22 @@ h5 {
   opacity: 0.88;
   font-size: 1.5rem;
   color: white;
-  overflow-y: auto; /* Add vertical scrollbar if content overflows */
-  /* You can adjust the width, padding, and other styles as needed */
   padding: 10px;
   border: 1px solid #ccc;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+}
+.container-grid3::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+.container-grid3::-webkit-scrollbar-track {
+  background: #212121; /* Background color of the track */
+}
+
+.container-grid3::-webkit-scrollbar-thumb {
+  background-color: #555558; /* Color of the thumb */
+  border-radius: 5px; /* Rounded corners for the thumb */
 }
 
 .nft-content {
@@ -290,7 +302,19 @@ h5 {
 }
 
 .assets {
+  color: black;
+  font-weight: bolder;
   margin-top: 20px;
   font-weight: bolder;
   text-decoration: underline;
+}
+
+.nft-item.selected .tree {
+  border: 3px solid #5353e0; /* Change border color for selected item */
+}
+
+.claim-btn {
+  position: absolute;
+  bottom: 20px; /* Adjust as needed */
+  left: 20px; /* Adjust as needed */
 }
