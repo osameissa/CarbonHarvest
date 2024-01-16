@@ -3,6 +3,7 @@ import Web3 from "web3";
 import MyERC721Contract from "../abi/MyERC721.json";
 import BackButton from "../components/BackButton";
 import "./MintPage.css";
+import Cc from "../components/Cc";
 
 const MintPage = () => {
   const [web3, setWeb3] = useState(null);
@@ -65,6 +66,7 @@ const MintPage = () => {
           Mint
         </button>
       </div>
+      <Cc />
     </body>
   );
 };
