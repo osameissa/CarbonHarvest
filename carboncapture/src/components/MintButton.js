@@ -6,8 +6,6 @@ const MintButton = () => {
   const navigate = useNavigate();
 
   const handleMinting = () => {
-    // Add logic to handle minting, for example, redirect to a minting interface
-    // You can replace '/minting' with the actual route of your minting interface
     navigate("/MintPage");
   };
 
