@@ -1,4 +1,3 @@
-// LoggedInBar.js
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRightFromBracket } from "@fortawesome/free-solid-svg-icons";
@@ -18,7 +17,6 @@ const LoggedInBar = () => {
         // Disconnect MetaMask by requesting accounts
         await window.ethereum.request({ method: "eth_requestAccounts" });
 
-        // Route back to the home page
         navigate("/");
       } else {
         console.error("MetaMask not installed");
