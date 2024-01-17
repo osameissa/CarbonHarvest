@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
-import "./MyERC20.sol";  // Import the MyERC20 contract
+import "./MyERC20.sol"; 
 
 contract MyERC721 is ERC721Enumerable, Ownable {
     uint256 public constant TOKENS_PER_DAY = 68.5 * 10**18; // 68.5 tokens per day
