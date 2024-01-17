@@ -9,6 +9,8 @@ const MintPage = () => {
   const [web3, setWeb3] = useState(null);
   const [accounts, setAccounts] = useState(null);
   const [myERC721, setMyERC721] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [mintSuccess, setMintSuccess] = useState(false); 
 
   useEffect(() => {
     loadBlockchainData();
@@ -20,17 +22,16 @@ const MintPage = () => {
         const web3 = new Web3(window.ethereum);
         const provider = window.ethereum;
 
-        // Requesting accounts using the new method
         const addresses = await provider.request({
           method: "eth_requestAccounts",
         });
-        console.log(addresses); // Log the addresses to the console
+        console.log(addresses);
 
         const deployedNetwork = {
-          address: "0xc3e8927CCC64b1BE97c2f35A1d7845f6D01decfA", // Replace with your contract's address
+          address: "0xc3e8927CCC64b1BE97c2f35A1d7845f6D01decfA",
         };
 
-        // Initializing the contract without checking the network
+        // Initializing the contract
         const myERC721 = new web3.eth.Contract(
           MyERC721Contract.abi,
           deployedNetwork.address
@@ -50,10 +51,14 @@ const MintPage = () => {
   const handleMint = async () => {
     if (myERC721) {
       try {
+        setLoading(true);
         await myERC721.methods.mint(accounts[0]).send({ from: accounts[0] });
         console.log("Minting successful");
+        setMintSuccess(true); 
       } catch (error) {
         console.error("Error while minting:", error);
+      } finally {
+        setLoading(false);
       }
     }
   };
@@ -62,10 +67,11 @@ const MintPage = () => {
     <body className="mintPage">
       <BackButton />
       <div className="container">
-        <button className="mint-btn2" onClick={handleMint}>
-          Mint
+        <button className="mint-btn2" onClick={handleMint} disabled={loading}>
+          {loading ? <span className="loader"></span> : "Mint"}
         </button>
       </div>
+
       <Cc />
     </body>
   );
