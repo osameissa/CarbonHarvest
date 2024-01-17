@@ -10,7 +10,7 @@ const MintPage = () => {
   const [accounts, setAccounts] = useState(null);
   const [myERC721, setMyERC721] = useState(null);
   const [loading, setLoading] = useState(false);
-  const [mintSuccess, setMintSuccess] = useState(false); 
+  const [mintSuccess, setMintSuccess] = useState(false);
 
   useEffect(() => {
     loadBlockchainData();
@@ -54,7 +54,7 @@ const MintPage = () => {
         setLoading(true);
         await myERC721.methods.mint(accounts[0]).send({ from: accounts[0] });
         console.log("Minting successful");
-        setMintSuccess(true); 
+        setMintSuccess(true);
       } catch (error) {
         console.error("Error while minting:", error);
       } finally {

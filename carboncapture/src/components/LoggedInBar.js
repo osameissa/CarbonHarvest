@@ -5,7 +5,6 @@ import Web3 from "web3";
 import { useNavigate } from "react-router-dom";
 import MintButton from "../components/MintButton";
 
-
 const LoggedInBar = () => {
   const navigate = useNavigate();
 
@@ -13,8 +12,6 @@ const LoggedInBar = () => {
     try {
       if (window.ethereum) {
         const web3 = new Web3(window.ethereum);
-
-        // Disconnect MetaMask by requesting accounts
         await window.ethereum.request({ method: "eth_requestAccounts" });
 
         navigate("/");
@@ -29,7 +26,7 @@ const LoggedInBar = () => {
   return (
     <div className="navbar">
       <nav>
-      <MintButton />
+        <MintButton />
       </nav>
       <div className="connect-button">
         <button className="signOutBtn" onClick={handleSignOut} title="Sign Out">

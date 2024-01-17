@@ -4,7 +4,6 @@ import { Network, Alchemy } from "alchemy-sdk";
 import LoggedInBar from "../components/LoggedInBar";
 import Cc from "../components/Cc";
 import MyERC721Contract from "../abi/MyERC721.json";
-
 const ERC721_ADDRESS = "0xc3e8927CCC64b1BE97c2f35A1d7845f6D01decfA";
 const web3 = new Web3(window.ethereum);
 
@@ -23,7 +22,7 @@ function LoggedIn() {
   const [walletAddress, setWalletAddress] = useState(null);
   const [nfts, setNfts] = useState([]);
   const [selectedNft, setSelectedNft] = useState(null);
-  const [selectedTokenId, setSelectedTokenId] = useState(null); 
+  const [selectedTokenId, setSelectedTokenId] = useState(null);
 
   useEffect(() => {
     const loadWeb3 = async () => {
@@ -56,7 +55,7 @@ function LoggedIn() {
     } else {
       setSelectedNft(nft);
       setSelectedTokenId(tokenId);
-      console.log("Selected Token ID:", tokenId); 
+      console.log("Selected Token ID:", tokenId);
     }
   };
 
@@ -76,7 +75,7 @@ function LoggedIn() {
   };
 
   const defaultPhotoUrl =
-    "https://static.vecteezy.com/system/resources/previews/024/786/062/original/illustration-of-trees-isolated-on-background-with-ai-generated-free-png.png"; 
+    "https://static.vecteezy.com/system/resources/previews/024/786/062/original/illustration-of-trees-isolated-on-background-with-ai-generated-free-png.png";
   return (
     <div className="loggedInPage">
       <LoggedInBar />
