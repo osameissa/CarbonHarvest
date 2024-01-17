@@ -6,17 +6,15 @@ import Cc from "../components/Cc";
 import MyERC721Contract from "../abi/MyERC721.json";
 
 const ERC721_ADDRESS = "0xc3e8927CCC64b1BE97c2f35A1d7845f6D01decfA";
-const web3 = new Web3(window.ethereum); // Initialize web3
+const web3 = new Web3(window.ethereum);
 
 const myERC721Contract = new web3.eth.Contract(
   MyERC721Contract.abi,
   ERC721_ADDRESS
 );
-
-// Setup Alchemy with your API key and network
 const settings = {
-  apiKey: "qNwdDTZTyO54jZQ6zUwJPNUnChF1Yot4", // Your Alchemy API key
-  network: Network.MATIC_MUMBAI, // Polygon Mumbai Testnet
+  apiKey: "qNwdDTZTyO54jZQ6zUwJPNUnChF1Yot4",
+  network: Network.MATIC_MUMBAI,
 };
 
 const alchemy = new Alchemy(settings);
@@ -24,8 +22,8 @@ const alchemy = new Alchemy(settings);
 function LoggedIn() {
   const [walletAddress, setWalletAddress] = useState(null);
   const [nfts, setNfts] = useState([]);
-  const [selectedNft, setSelectedNft] = useState(null); // Track selected NFT
-  const [selectedTokenId, setSelectedTokenId] = useState(null); // Store tokenId of the selected NFT
+  const [selectedNft, setSelectedNft] = useState(null);
+  const [selectedTokenId, setSelectedTokenId] = useState(null); 
 
   useEffect(() => {
     const loadWeb3 = async () => {
@@ -53,22 +51,18 @@ function LoggedIn() {
 
   const handleNftSelection = (nft, tokenId) => {
     if (selectedNft === nft) {
-      // Deselect if already selected
       setSelectedNft(null);
       setSelectedTokenId(null);
     } else {
-      // Select the NFT and store its tokenId
       setSelectedNft(nft);
       setSelectedTokenId(tokenId);
-      console.log("Selected Token ID:", tokenId); // Log the tokenId
+      console.log("Selected Token ID:", tokenId); 
     }
   };
 
   const handleClaimTokens = async () => {
     if (selectedTokenId) {
-      // Ensure a token is selected
       try {
-        // Call the claimTokens function in your ERC721 contract with the selected tokenId
         await myERC721Contract.methods.claimTokens(selectedTokenId).send({
           from: walletAddress,
         });
@@ -81,10 +75,8 @@ function LoggedIn() {
     }
   };
 
-  // Define a default photo URL
   const defaultPhotoUrl =
-    "https://static.vecteezy.com/system/resources/previews/024/786/062/original/illustration-of-trees-isolated-on-background-with-ai-generated-free-png.png"; // Replace with your default photo URL
-
+    "https://static.vecteezy.com/system/resources/previews/024/786/062/original/illustration-of-trees-isolated-on-background-with-ai-generated-free-png.png"; 
   return (
     <div className="loggedInPage">
       <LoggedInBar />
@@ -99,7 +91,7 @@ function LoggedIn() {
                 <div
                   key={index}
                   className={`nft-item ${
-                    selectedNft === nft ? "selected" : "" // Apply selected style
+                    selectedNft === nft ? "selected" : ""
                   }`}
                   onClick={() => handleNftSelection(nft, nft.tokenId)}
                 >
