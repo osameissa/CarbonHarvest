@@ -73,16 +73,4 @@ Real-time data integration from ground-based sensors and satellite imagery. Util
 2. **Smart Contract Legality:**
    - Ensure that smart contracts comply with relevant legal standards for token issuance and trading.
 
-## References
-
-1. [Blockchain Revolution: How the Technology Behind Bitcoin is Changing Money, Business, and the World](https://www.amazon.com/Blockchain-Revolution-Technology-Changing-Business/dp/1101980133) by Don Tapscott and Alex Tapscott.
-
-2. [Ethereum Documentation](https://ethereum.org/)
-
-3. [React.js Documentation](https://reactjs.org/)
-
-4. [Solidity Documentation](https://docs.soliditylang.org/)
-
-5. [MongoDB Documentation](https://docs.mongodb.com/)
-
-GG!
+## GG!
