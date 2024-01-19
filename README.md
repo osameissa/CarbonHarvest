@@ -37,7 +37,6 @@ The goal of this project is to create a minimal viable product that illustrates 
 ### Back-end
 
 - Node.js and Express.js for server-side logic.
-- MongoDB for storing basic user and tree planting data.
 
 ## User Authentication
 
