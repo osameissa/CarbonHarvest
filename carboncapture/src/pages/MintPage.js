@@ -71,7 +71,6 @@ const MintPage = () => {
           {loading ? <span className="loader"></span> : "Mint"}
         </button>
       </div>
-
       <Cc />
     </body>
   );
