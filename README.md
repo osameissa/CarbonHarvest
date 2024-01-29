@@ -1,4 +1,4 @@
-# Tokenized Carbon-Dioxide Token
+## Tokenized Carbon-Dioxide Token
 
 ## Idea
 
@@ -37,7 +37,6 @@ The goal of this project is to create a minimal viable product that illustrates 
 ### Back-end
 
 - Node.js and Express.js for server-side logic.
-- MongoDB for storing basic user and tree planting data.
 
 ## User Authentication
 
@@ -73,4 +72,4 @@ Real-time data integration from ground-based sensors and satellite imagery. Util
 2. **Smart Contract Legality:**
    - Ensure that smart contracts comply with relevant legal standards for token issuance and trading.
 
-## GG!
+## GG
