@@ -62,7 +62,6 @@ Real-time data integration from ground-based sensors and satellite imagery. Util
    - Real-time data from ground-based sensors and satellite imagery are integrated to provide accurate and up-to-date information.
    - Blockchain ensures transparency and immutability of environmental data.
 
-
 ## Eventual Legal Restrictions / Regulatory Implications
 
 1. **Carbon Credit Compliance:**
@@ -73,4 +72,4 @@ Real-time data integration from ground-based sensors and satellite imagery. Util
 2. **Smart Contract Legality:**
    - Ensure that smart contracts comply with relevant legal standards for token issuance and trading.
 
-## GG!!
+## GG!!!
