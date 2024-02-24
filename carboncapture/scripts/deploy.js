@@ -13,7 +13,7 @@ async function deploy() {
 
   // Get the deployer's address
   const accounts = await provider.eth.getAccounts();
-  const deployerAddress = 0xf0a0fcccfea76bc05602a3d41f3a1c08d7ef6a3e;
+  const deployerAddress = ;
 
   // Deploy MyERC20 with the specified address as the owner
   const MyERC20Factory = new provider.eth.Contract(MyERC20ABI);
